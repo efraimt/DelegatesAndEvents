@@ -20,9 +20,12 @@ namespace DelegatesAndEvents
             Stam();//1
             Program.Stam();//2
 
+            //Points on static method
             MyDelegate myDelegate1 = new MyDelegate(Stam);
             myDelegate1();//3
 
+
+            //Points on instance metthod
             MyDelegate myDelegate2 = new MyDelegate(new Calculations().StamInstance);
 
             Console.WriteLine(myDelegate2.Method);
